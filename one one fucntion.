@@ -1,0 +1,18 @@
+#Funcitons: check if func. is one one
+def one_to_one(A,B,f):
+ for x1 in A:
+  for x2 in A:
+   if x1!=x2:
+    for y in B:
+      if (x1,y) in f and (x2,y) in f:
+        return False
+ return True
+#define the sets and the function
+A=(1,5,8,9)
+B=(2,4)
+f={(1,2),(5,4),(8,2),(9,4)}
+#check if the func. is one to one
+if one_to_one(A,B,f):
+  print("The func. is one-to-one")
+else:
+  print("the func. is not one to one.")
