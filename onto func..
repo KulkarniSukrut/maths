@@ -1,0 +1,20 @@
+#check if function is onto
+def is_onto(A, B, f):
+ for y in B:
+  found = False
+  for x in A:
+    if (x, y) in f:
+      found = True
+      break
+    if not found:
+      return False
+  return True
+# Define the sets and the function
+A = {1, 5, 8, 9}
+B = {2, 4}
+f={(1, 2), (5, 4), (8, 2), (9, 4)}
+# Check if the function is onto
+if is_onto(A, B, f):
+  print("The function f is onto.")
+else:
+  print("The function f is not onto.")
