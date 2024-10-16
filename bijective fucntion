@@ -1,0 +1,5 @@
+#bijective function
+if one_to_one(A, B, f)and is_onto(A, B, f):
+    print("The function f is Bijective.")
+else:
+    print("The function f not Bijective.")
